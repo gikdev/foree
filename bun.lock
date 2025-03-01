@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "mvuil",
+      "name": "foree",
       "dependencies": {
         "@master/styled.react": "^2.0.4",
         "@phosphor-icons/react": "^2.1.7",
