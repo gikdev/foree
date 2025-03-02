@@ -8,8 +8,8 @@ const meta: Meta<typeof Badge> = {
   argTypes: {
     color: {
       control: "select",
-      options: ["neutral", "danger", "warning", "success", "info"]
-    }
+      options: ["neutral", "danger", "warning", "success", "info"],
+    },
   },
 }
 export default meta
