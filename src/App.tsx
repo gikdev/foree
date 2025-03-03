@@ -1,4 +1,5 @@
 import { Collapse } from "./components/DataDisplay/Collapse"
+import Status from "./components/DataDisplay/Status"
 import { Btn } from "./components/DataInput"
 
 export default function App() {
@@ -6,7 +7,9 @@ export default function App() {
     <div className="p-4">
       <Collapse question="What is HTML?" contentContainerClassName="flex flex-col gap-2">
         <p className="">HTML stands for Hypertext Markup Language. But first you need to:</p>
-        <Btn>Learn HTML</Btn>
+        <Btn>
+          <Status color="info" /> Learn HTML
+        </Btn>
       </Collapse>
     </div>
   )
