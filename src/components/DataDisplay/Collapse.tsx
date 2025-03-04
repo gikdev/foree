@@ -5,6 +5,7 @@ import { ccn } from "../../lib/cns"
 export interface CollapseProps {
   question: string
   children: React.ReactNode
+  defaultOpen?: boolean
   className?: string
   contentContainerClassName?: string
 }
@@ -14,8 +15,9 @@ export function Collapse({
   question,
   className,
   contentContainerClassName,
+  defaultOpen = false,
 }: CollapseProps) {
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = useState(defaultOpen)
   const ArrowIcon = isOpen ? CaretUp : CaretDown
 
   return (

@@ -22,3 +22,16 @@ export const Default: Story = {
     ),
   },
 }
+
+export const OpenByDefault: Story = {
+  args: {
+    defaultOpen: true,
+    question: "What is HTML?",
+    children: (
+      <div className="flex flex-col gap-2">
+        <p>HTML is a language used in web. But first make sure you:</p>
+        <Btn>Learn HTML</Btn>
+      </div>
+    ),
+  },
+}
