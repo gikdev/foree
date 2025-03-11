@@ -1,4 +1,4 @@
-import { ccn } from "../../lib/cns"
+import { ccn } from "../lib/cns"
 
 export type BadgeColor = "neutral" | "info" | "warning" | "success" | "danger"
 export type BadgeSize = "medium" | "large"

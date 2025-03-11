@@ -1,6 +1,6 @@
 import type { Icon, IconWeight } from "@phosphor-icons/react"
 import type { ButtonHTMLAttributes } from "react"
-import { ccn } from "../../lib/cns"
+import { ccn } from "../lib/cns"
 
 export type BtnSize = "small" | "medium" | "large"
 export type BtnTheme = "primary" | "secondary" | "outline" | "light" | "ghost"

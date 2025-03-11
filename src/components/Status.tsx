@@ -1,4 +1,4 @@
-import { ccn } from "../../lib/cns"
+import { ccn } from "../lib/cns"
 
 type StatusSize = "small" | "medium" | "large"
 type StatusColor = "neutral" | "dark" | "light" | "danger" | "warning" | "success" | "info"
@@ -9,7 +9,7 @@ interface StatusProps {
   className?: string
 }
 
-export default function Status({ color = "neutral", size = "medium", className }: StatusProps) {
+export function Status({ color = "neutral", size = "medium", className }: StatusProps) {
   const styles = ccn(
     {
       "bg-neutral-3": color === "neutral",

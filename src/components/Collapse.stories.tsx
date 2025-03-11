@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react"
-import { Btn } from "../Actions/Btn"
+import { Btn } from "./Btn"
 import { Collapse } from "./Collapse"
 
 const meta: Meta<typeof Collapse> = {

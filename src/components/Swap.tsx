@@ -1,5 +1,5 @@
 import type { ButtonHTMLAttributes } from "react"
-import { cn } from "../../lib/cns"
+import { cn } from "../lib/cns"
 
 type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick" | "">
 export default interface SwapProps extends ButtonProps {

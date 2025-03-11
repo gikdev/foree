@@ -1,5 +1,5 @@
 import type { InputHTMLAttributes } from "react"
-import { ccn } from "../../lib/cns"
+import { ccn } from "../lib/cns"
 
 export type CheckboxTheme = "neutral" | "danger" | "success" | "info" | "warning"
 

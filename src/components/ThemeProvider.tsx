@@ -1,6 +1,6 @@
 import { Moon, Sun } from "@phosphor-icons/react"
 import { createContext, useContext, useState } from "react"
-import { Btn, type BtnProps } from "../Actions/Btn"
+import { Btn, type BtnProps } from "./Btn"
 
 export type Themes = "light" | "dark"
 

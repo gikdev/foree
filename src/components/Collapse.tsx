@@ -1,6 +1,6 @@
 import { CaretDown, CaretUp } from "@phosphor-icons/react"
 import { useState } from "react"
-import { ccn } from "../../lib/cns"
+import { ccn } from "../lib/cns"
 
 export interface CollapseProps {
   question: string

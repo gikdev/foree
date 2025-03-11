@@ -1,6 +1,6 @@
 import { Btn, Checkbox } from "./components"
-import { Collapse } from "./components/DataDisplay/Collapse"
-import Status from "./components/DataDisplay/Status"
+import { Collapse } from "./components/Collapse"
+import { Status } from "./components/Status"
 
 export default function App() {
   return (
