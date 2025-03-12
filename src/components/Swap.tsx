@@ -1,5 +1,5 @@
-import type { ButtonHTMLAttributes } from "react"
 import styled from "@master/styled.react"
+import type { ButtonHTMLAttributes } from "react"
 
 type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick" | "children">
 
