@@ -1,6 +1,6 @@
+import styled from "@master/styled.react"
 import { CaretDown, CaretUp } from "@phosphor-icons/react"
 import { useState } from "react"
-import { ccn } from "../lib/cns"
 
 export interface CollapseProps {
   question: string
@@ -21,17 +21,20 @@ export function Collapse({
   const ArrowIcon = isOpen ? CaretUp : CaretDown
 
   return (
-    <div {...ccn("bg-neutral-4 block w-full rounded-md overflow-clip", className)}>
-      <button
-        className="p-2 cursor-pointer flex items-center justify-between gap-1 w-full"
-        type="button"
-        onClick={() => setOpen(p => !p)}
-      >
-        <p className="font-bold text-start text-lg">{question}</p>
+    <StyledContainer className={className}>
+      <StyledBtn type="button" onClick={() => setOpen(p => !p)}>
+        <StyledText>{question}</StyledText>
         <ArrowIcon size={20} className="shrink-0" />
-      </button>
+      </StyledBtn>
 
-      <div {...ccn("p-2 block", contentContainerClassName, { hidden: !isOpen })}>{children}</div>
-    </div>
+      <StyledContentContainer className={contentContainerClassName}>
+        {children}
+      </StyledContentContainer>
+    </StyledContainer>
   )
 }
+
+const StyledContainer = styled.div`bg-neutral-4 block w-full rounded-md overflow-clip`
+const StyledBtn = styled.button`p-2 cursor-pointer flex items-center justify-between gap-1 w-full`
+const StyledText = styled.p`font-bold text-start text-lg`
+const StyledContentContainer = styled.div("p-2 block", props => !props.$isOpen && "hidden")

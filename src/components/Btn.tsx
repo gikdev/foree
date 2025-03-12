@@ -45,17 +45,17 @@ export function Btn({
     size: iconSize = defaultIconSizeBasedOnBtnSize[size],
   } = iconsConfig
 
-  const style = ccn(
+  const styles = ccn(
     stylesBase,
     stylesSize[size],
     generateThemeStyles(theme, color),
     { "opacity-50 cursor-not-allowed": others.disabled },
     OnlyIcon ? stylesOnlyIconBasedOnBtnSize[size] : "",
-    others.className,
+    others.className ?? "",
   )
 
   return (
-    <button {...style} {...others}>
+    <button {...styles} {...others}>
       {OnlyIcon ? (
         <OnlyIcon size={iconSize} weight={weight} />
       ) : (

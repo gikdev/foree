@@ -1,7 +1,8 @@
 import type { ButtonHTMLAttributes } from "react"
-import { cn } from "../lib/cns"
+import styled from "@master/styled.react"
 
-type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick" | "">
+type ButtonProps = Omit<ButtonHTMLAttributes<HTMLButtonElement>, "onClick" | "children">
+
 export default interface SwapProps extends ButtonProps {
   /** Content to show if it's off */
   contentOff: React.ReactNode
@@ -17,11 +18,11 @@ export default interface SwapProps extends ButtonProps {
 }
 
 export function Swap({ contentOff, contentOn, isOn, setOn, ...others }: SwapProps) {
-  const className = cn("cursor-pointer", others.className)
-
   return (
-    <button type="button" onClick={() => setOn(!isOn)} {...others} className={className}>
+    <StyledBtn type="button" onClick={() => setOn(!isOn)} {...others}>
       {isOn ? contentOn : contentOff}
-    </button>
+    </StyledBtn>
   )
 }
+
+const StyledBtn = styled.btn`cursor-pointer`

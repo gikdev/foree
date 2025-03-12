@@ -3,7 +3,7 @@ import { useState } from "react"
 import { Swap } from "./Swap"
 
 const meta: Meta<typeof Swap> = {
-  title: "Components/Actions/Swap",
+  title: "Components/Swap",
   component: Swap,
   tags: ["autodocs"],
   argTypes: {

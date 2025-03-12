@@ -3,7 +3,7 @@ import { Btn } from "./Btn"
 import { Collapse } from "./Collapse"
 
 const meta: Meta<typeof Collapse> = {
-  title: "Components/DataDisplay/Collapse",
+  title: "Components/Collapse",
   component: Collapse,
   tags: ["autodocs"],
 }

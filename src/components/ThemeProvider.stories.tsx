@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react"
 import { ThemeProvider, ThemeSwitchBtn, useThemeContext } from "./ThemeProvider"
 
 const meta: Meta<typeof ThemeSwitchBtn> = {
-  title: "Components/Tidy Up/Theme Switch Btn",
+  title: "Components/Theme Switch Btn",
   component: ThemeSwitchBtn,
   tags: ["autodocs"],
   decorators: Story => (
