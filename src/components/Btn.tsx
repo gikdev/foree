@@ -35,6 +35,7 @@ export function Btn({
   color = "neutral",
   iconsConfig = {},
   children,
+  className,
   ...others
 }: BtnProps) {
   const {
@@ -51,7 +52,7 @@ export function Btn({
     generateThemeStyles(theme, color),
     { "opacity-50 cursor-not-allowed": others.disabled },
     OnlyIcon ? stylesOnlyIconBasedOnBtnSize[size] : "",
-    others.className ?? "",
+    className ?? "",
   )
 
   return (

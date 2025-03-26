@@ -1,6 +1,6 @@
+import { Cube, House, Receipt } from "@phosphor-icons/react"
 import type { Meta, StoryObj } from "@storybook/react"
 import { TabBar } from "./TabBar"
-import { Cube, House, Receipt } from "@phosphor-icons/react"
 
 const meta: Meta<typeof TabBar> = {
   title: "Components/TabBar",
@@ -17,6 +17,6 @@ export const Default: Story = {
       { icon: House, path: "/", title: "خانه" },
       { icon: Receipt, path: "/expenses", title: "خرجی‌ها" },
       { icon: Cube, path: "/budgets", title: "بودجه‌ها" },
-    ]
+    ],
   },
 }
