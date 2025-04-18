@@ -3,7 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "exports": {
     "./components": "./src/components/index.ts",
     "./*": "./src/*"
@@ -31,19 +33,19 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@chromatic-com/storybook": "3.2.5",
-    "@storybook/addon-essentials": "8.6.2",
-    "@storybook/addon-interactions": "8.6.2",
-    "@storybook/addon-onboarding": "8.6.2",
-    "@storybook/blocks": "8.6.2",
-    "@storybook/react": "8.6.2",
-    "@storybook/react-vite": "8.6.2",
-    "@storybook/test": "8.6.2",
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-onboarding": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/test": "^8.6.12",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
     "globals": "^15.15.0",
-    "storybook": "8.6.2",
+    "storybook": "^8.6.12",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   }
